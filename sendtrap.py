@@ -34,7 +34,7 @@ options:
         description:
             - The SNMP OID to use
         required: false
-        default: 1.3.6.1.4.1.326
+        default: 1.3.6.1.4.1.3267
     trap:
         description:
             - The specific trap to send
@@ -78,7 +78,7 @@ def run_module():
     module_args = dict(
         community=dict(type='str',   required=False, default="public"),
         target=dict(type='str',      required=True),
-        oid=dict(type='str',         required=False, default='1.3.6.1.4.1.326'),
+        oid=dict(type='str',         required=False, default='1.3.6.1.4.1.3267'),
         trap=dict(type='str',        required=True),
         trapmessage=dict(type='str', required=True)
     )
