@@ -109,7 +109,7 @@ def run_module():
 
     # manipulate or modify the state as needed (this is going to be the
     # part where your module will do what it needs to do)
-    # snmptrap -v 2c -c public 192.168.1.117  '' 1.3.6.1.4.1.3266 1.3.6.1.4.1.3266.6.0 s "The default message"
+    # snmptrap -v 2c -c public 192.168.1.117  '' 1.3.6.1.4.1.3266 1.3.6.1.4.1.3267.6.0 s "The default message"
 
     community   = module.params['community']
     target      = module.params['target']
